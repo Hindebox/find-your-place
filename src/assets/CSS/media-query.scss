@@ -1,0 +1,151 @@
+$breakpoint-small: 900px;
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 600px;
+$breakpoint-xxs: 400px;
+
+@media screen and (max-width: $breakpoint-xxs) {
+  body {
+    .search_hero {
+      .search-div {
+        h1 {
+          font-size: 45px;
+        }
+      }
+    }
+    .results-section {
+      .info-div {
+        h2 {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $breakpoint-small) {
+  body {
+    .results-section {
+      .info-div {
+        h2 {
+          font-size: 65px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $breakpoint-tablet) {
+  //SEARCH HERO
+  .search_hero {
+    .search-div {
+      h1 {
+        font-size: 100px;
+      }
+      .form {
+        width: 70%;
+        margin-top: 20px;
+        .results-dropdown {
+          height: 180px;
+        }
+        #result ul li {
+          line-height: 30px;
+        }
+      }
+    }
+  }
+  body {
+    //SELECTED CITY GENERAL INFO
+    .results-section {
+      flex-direction: column;
+      .info-div {
+        width: 100%;
+        height: auto;
+        padding: 100px 25px;
+        h2 {
+          font-size: 70px;
+        }
+        .scroll {
+          display: none;
+        }
+      }
+      .city-photo {
+        height: 100vh !important;
+        padding: 25px;
+      }
+    }
+    //WATHER
+    .more-info {
+      .time-wethear-population {
+        .time-wethear {
+          height: auto;
+          padding: 50px 25px;
+          margin-bottom: 20px;
+        }
+        .pop-lang {
+          svg {
+            width: 40px;
+            margin-right: 30px;
+          }
+          h4 {
+            font-size: 40px !important;
+          }
+        }
+      }
+      .charts {
+        .charts-category {
+          justify-content: space-evenly;
+          .icon-chart {
+            width: 80px;
+            img {
+              width: 70px;
+              margin-bottom: 13px;
+              align-self: center;
+            }
+          }
+          .category-details {
+            margin-left: 20px;
+            padding: 0px;
+            margin-bottom: 50px;
+          }
+        }
+      }
+    }
+
+    //FOOTER
+    footer {
+      padding: 15px 25px;
+      .social {
+        width: 50%;
+      }
+    }
+
+    //footer
+    .cityFooter {
+      flex-direction: column;
+      .social {
+        width: 100%;
+      }
+    }
+
+    //error popup
+    .allertError {
+      width: 90%;
+      height: auto;
+      padding: 30px;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: $breakpoint-mobile) {
+  .search_hero {
+    .search-div {
+      h1 {
+        font-size: 65px;
+      }
+      .form {
+        width: 80%;
+      }
+    }
+  }
+}
