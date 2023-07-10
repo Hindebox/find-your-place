@@ -4,7 +4,6 @@ import { createClient } from "pexels";
 
 const pexelKey = process.env.PEXEL_API_KEY;
 const client = createClient(pexelKey);
-//console.log(pexelKey);
 
 import { showCity, onVisible, displayErrorAllert } from "./utilities";
 
@@ -202,7 +201,6 @@ const cityDate = document.querySelector(".date");
 const timeWeatherCard = document.querySelector(".time-wethear");
 const cityWeatherDiv = document.querySelector(".weather-forecast");
 const weatherKey = process.env.WEATHER_API_KEY;
-console.log(weatherKey);
 //GET weather infos//
 export function getWeatherInfos(latitude, longitude) {
   axios
